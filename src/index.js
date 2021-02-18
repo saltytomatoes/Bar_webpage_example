@@ -3,7 +3,10 @@ const body = document.body;
 
 const initialize = (function() {
 
-    let mainImg = `<div class="mainImg"></div>`;
+    let mainImg = `<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="/src/centeralpic.jpg"></div>`;
+
+
+
     let para = `<p>Lose john poor same it case do year we. Full how way even the sigh. Extremely nor furniture fat questions now provision incommode preserved. Our side fail find like now. Discovered travelling for insensible partiality unpleasing impossible she. Sudden up my excuse to suffer ladies though or. Bachelor possible marianne directly confined relation as on he. 
 
     Situation admitting promotion at or to perceived be. Mr acuteness we as estimable enjoyment up. An held late as felt know. Learn do allow solid to grave. Middleton suspicion age her attention. Chiefly several bed its wishing. Is so moments on chamber pressed to. Doubtful yet way properly answered humanity its desirous. Minuter believe service arrived civilly add all. Acuteness allowance an at eagerness favourite in extensive exquisite ye. 
