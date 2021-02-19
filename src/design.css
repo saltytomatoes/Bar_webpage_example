@@ -88,7 +88,7 @@ header {
 }
 
 #sector2 #thatsJack {
-    background: url('/src/thatsJack.png') no-repeat center;
+    background: url('/src/pics/thatsJack.png') no-repeat center;
     background-size: cover;
     
     width: 200px;

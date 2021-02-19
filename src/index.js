@@ -4,7 +4,7 @@ const body = document.body;
 const initialize = (function() {
 
     let header = `<header> Wellcome To Vitulis Place </header>`;
-    let mainImg = `<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="/src/centeralpic.jpg"></div>`;
+    let mainImg = `<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="/src/pics/centeralpic.jpg"></div>`;
     
     let descriptionHeader = `<h1> Vitulis Place - Alcohol & Fun ! </h1>`;
     let description = `<p> <span>The Vitulis Place Dance Bar</span> - The vitulis place is the first and the only dance bar in beer sheva wich combines
@@ -23,7 +23,7 @@ const initialize = (function() {
                     ${descriptionHolder}
                    </div>`;
 
-    let mainImg2 = `<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="/src/centralpic2.jpg"></div>`;
+    let mainImg2 = `<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="/src/pics/centralpic2.jpg"></div>`;
 
     let sector3 = `<div id="sector3"></div>`;
 
