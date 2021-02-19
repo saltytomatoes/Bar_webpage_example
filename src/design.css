@@ -141,7 +141,7 @@ header {
 }
 
 #tabHolder .button:active {
-    transform: scale(0.9);
+    transform: scale(1);
 }
 
 .on {

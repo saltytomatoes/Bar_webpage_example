@@ -1,3 +1,6 @@
+import {exporting} from './Contact.module.js';
+exporting.test1();
+
 const Content = document.querySelector("#content");
 const body = document.body;
 
@@ -53,6 +56,9 @@ const initialize = (function() {
 })();
 
 
+
+
+
 const tabSetup = (function() {
     
     class Tab {
@@ -83,10 +89,10 @@ const tabSetup = (function() {
         toggleLight (clickFlag = true) {
             let lightBulb = this.getDivRef().firstElementChild;
             lightBulb.classList.toggle("on");
-            this.lightIsOn = true;
+            this.lightIsOn = !this.lightIsOn;
 
             if(clickFlag)
-            this.toggleOtherLights(this);
+                this.toggleOtherLights(this);
         }
 
 
@@ -97,12 +103,5 @@ const tabSetup = (function() {
 
     let tabs = Array.from(document.querySelectorAll(".button"));
     tabs = tabs.map(tab => new Tab(tab));
-    
-    
-
-
-
-
-
 })();
 
