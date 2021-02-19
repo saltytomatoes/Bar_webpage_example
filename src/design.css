@@ -30,22 +30,20 @@ header {
     width: 100%;
 }
 
-#sector2 {
-    width: 100%;
-    background: linear-gradient(to bottom right, #444, #111);
-    padding: 20px 0;
-}
-
-#sector3 {
-    width: 100%;
-    background: linear-gradient(to bottom right, #444, #111);
-    
-    height: 600px;
-}
-
 .parallax {
     min-height: 500px;
     background: transparent;
+}
+
+
+
+
+ /* -- Sector 2 Related */
+
+ #sector2 {
+    width: 100%;
+    background: linear-gradient(to bottom right, #444, #111);
+    padding: 20px 0;
 }
 
 .subContainer {
@@ -100,3 +98,65 @@ header {
 
 
 }
+
+
+
+
+/*  --Sector3 related-- */
+
+
+#sector3 {
+    width: 100%;
+    background: linear-gradient(to bottom right, #444, #111);
+    padding: 30px 0;
+}
+
+#tabHolder {
+    width: 60%;
+    height: 75px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#tabHolder .button {
+    width: 25%;
+    color: white;
+    font-family: 'Share Tech Mono';
+    font-size: 30px;
+    text-align: center;
+
+    line-height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to top left, #444, #333);
+    box-shadow: 0 0 10px 0px black;
+    transition: .2s;
+}
+
+#tabHolder .button:hover {
+    transform: scale(1.1);
+}
+
+#tabHolder .button:active {
+    transform: scale(0.9);
+}
+
+.on {
+    box-shadow: inset 0 0 11px lime,
+    0 0 3px green !important;
+}
+
+#tabHolder .button .lightBulb {
+    border: solid black 1px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
+    position: relative;
+    top: 30px;
+    box-shadow: inset 0 0 11px grey;
+}
+
