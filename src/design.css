@@ -33,9 +33,14 @@ header {
 #sector2 {
     width: 100%;
     background: linear-gradient(to bottom right, #444, #111);
-    display: flex;
-    justify-content: space-around;
     padding: 20px 0;
+}
+
+#sector3 {
+    width: 100%;
+    background: linear-gradient(to bottom right, #444, #111);
+    
+    height: 600px;
 }
 
 .parallax {

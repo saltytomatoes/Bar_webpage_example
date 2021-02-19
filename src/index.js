@@ -25,9 +25,12 @@ const initialize = (function() {
 
     let mainImg2 = `<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="/src/centralpic2.jpg"></div>`;
 
+    let sector3 = `<div id="sector3"></div>`;
+
     
     Content.innerHTML = header +
                         mainImg + 
                         sector2 +
-                        mainImg2;
+                        mainImg2 +
+                        sector3;
 })();
