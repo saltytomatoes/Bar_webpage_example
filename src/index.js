@@ -10,17 +10,24 @@ const initialize = (function() {
     let description = `<p> <span>The Vitulis Place Dance Bar</span> - The vitulis place is the first and the only dance bar in beer sheva wich combines
                           new era, modern type of alcohol and music alongside with old fassioned, classic drinks and party spirit! in 2025 Our founder, Jack Vituli
                           decided to bring a unique experience to his fellows in the negev and merge the past and the future in to the present!</p>`;
+    
+    let thatsJack = `<div id="thatsJack"></div>`;
+
     let descriptionHolder = `<div class="subContainer"> 
                               ${descriptionHeader}
                               ${description}
+                              ${thatsJack}
                              </div>`;
 
     let sector2 = `<div id="sector2">
                     ${descriptionHolder}
                    </div>`;
 
+    let mainImg2 = `<div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="/src/centralpic2.jpg"></div>`;
+
     
     Content.innerHTML = header +
                         mainImg + 
-                        sector2;
+                        sector2 +
+                        mainImg2;
 })();
