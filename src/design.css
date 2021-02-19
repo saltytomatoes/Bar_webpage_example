@@ -74,3 +74,18 @@ header {
     letter-spacing: 3px;
     font-size: 56px;
 }
+
+#sector2 .subContainer p{
+    color: white;
+    text-align: center;
+    font-family: 'Share Tech Mono';
+
+    width: 55%;
+    margin: auto;
+}
+
+#sector2 .subContainer p span {
+    color: #ac0606;
+    font-size: 20px;
+    font-weight: 400;
+}
