@@ -43,9 +43,7 @@ const initialize = (function() {
                       ${btn3}
                     </div>`;
 
-    let tabContent = `<div id="tabContent">
-                        ${getMenuDiv()}
-                      </div>`;
+    let tabContent = `<div id="tabContent"></div>`;
 
     let sector3 = `<div id="sector3">
                     ${tabHolder}
@@ -70,13 +68,38 @@ const tabSetup = (function() {
         constructor(tabDiv){
             this.divRef = tabDiv;
             this.lightIsOn = false;
+            this.relatedContent = this.divRef.innerText;
             this.configEventListeners();
+            this.setRelatedContent();
+        }
+        
+
+        setRelatedContent () {
+            switch (this.relatedContent) {
+                case 'Menu':
+                    this.relatedContent = getMenuDiv();
+                    break;
+
+                case 'Contact':
+                    this.relatedContent = getContactDiv();
+                    break;
+                
+                case 'Magic!':
+                    this.relatedContent = `<div></div>`
+                    break;
+                
+                default:
+                    this.relatedContent = `<div style="color: red;">error</div>`
+            }
         }
 
         getDivRef () {
             return this.divRef;
         }
 
+        getRelatedContent() {
+            return this.relatedContent;
+        }
 
         // when a tab is clicked and its light is toggled, this method shuts down other lights
         toggleOtherLights (skipCurrent) {
@@ -102,12 +125,26 @@ const tabSetup = (function() {
         }
 
 
+        toggleContentView() {
+            if(!this.lightIsOn)
+                tabContent.innerHTML = this.getRelatedContent();
+            else
+                tabContent.innerHTML = `<div></div>`;
+        }
+
+        click() {
+            this.toggleContentView();
+            this.toggleLight();
+        }
+
         configEventListeners() {
-            this.getDivRef().addEventListener("click",this.toggleLight.bind(this));
+            this.getDivRef().addEventListener("click",this.click.bind(this));
         }
     }
 
+    let tabContent = document.querySelector("#tabContent");
     let tabs = Array.from(document.querySelectorAll(".button"));
     tabs = tabs.map(tab => new Tab(tab));
+
 })();
 

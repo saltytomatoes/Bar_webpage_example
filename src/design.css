@@ -2,9 +2,6 @@ html , body {
     margin: 0;
     padding: 0;
 }
-* {
-    text-decoration: none;
-}
 
 body {
     height: 100vh;
@@ -39,7 +36,15 @@ header {
 }
 
 
+#mainImg1 {
+    background: url('/src/pics/centeralpic.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+#mainImg2 {
+
+}
 
  /* -- Sector 2 Related */
 
