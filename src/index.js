@@ -1,5 +1,4 @@
-import {exporting} from './Contact.module.js';
-exporting.test1();
+import {getContactDiv} from './Contact.module.js';
 
 const Content = document.querySelector("#content");
 const body = document.body;
@@ -43,8 +42,13 @@ const initialize = (function() {
                       ${btn3}
                     </div>`;
 
+    let tabContent = `<div id="tabContent">
+                        ${getContactDiv()}
+                      </div>`;
+
     let sector3 = `<div id="sector3">
                     ${tabHolder}
+                    ${tabContent}
                   </div>`;
 
     
@@ -73,6 +77,7 @@ const tabSetup = (function() {
         }
 
 
+        // when a tab is clicked and its light is toggled, this method shuts down other lights
         toggleOtherLights (skipCurrent) {
             for(let i = 0; i < tabs.length; i++) {
                 if(skipCurrent == tabs[i])
