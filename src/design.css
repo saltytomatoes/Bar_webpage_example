@@ -112,6 +112,7 @@ header {
     width: 100%;
     background: linear-gradient(to bottom right, #444, #111);
     padding: 30px 0;
+    height: fit-content;
 }
 
 #tabHolder {
@@ -164,8 +165,7 @@ header {
 }
 
 #tabContent {
-    width: 75%;
-    border: solid white 1px;
+    width: 60%;
     margin: auto;
     margin-top: 70px;
 }
@@ -195,4 +195,37 @@ header {
 
 span:hover {
     color: red;
+}
+
+
+
+.MenuGrid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 60px;
+
+    width: 90%;
+    height: 2000px;
+}
+
+.coctailPic {
+    box-shadow: 0 0 20px 3px black;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    transition: 1s;
+}
+
+.coctailPic:hover {
+    transform: scale(1.1);
+}
+
+.coctailPic h1 {
+    text-align: center;
+    color: white;
+    
+    text-shadow: 0 0 7px black;
+    font-family: 'Share Tech Mono',cursive;
 }

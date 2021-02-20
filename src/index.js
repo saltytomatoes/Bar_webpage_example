@@ -1,4 +1,5 @@
 import {getContactDiv} from './Contact.module.js';
+import {getMenuDiv} from './Menu.module.js';
 
 const Content = document.querySelector("#content");
 const body = document.body;
@@ -43,7 +44,7 @@ const initialize = (function() {
                     </div>`;
 
     let tabContent = `<div id="tabContent">
-                        ${getContactDiv()}
+                        ${getMenuDiv()}
                       </div>`;
 
     let sector3 = `<div id="sector3">
