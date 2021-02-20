@@ -188,3 +188,11 @@ header {
 .str {
     color: orange;
 }
+
+#tabContent span {
+    transition: .2s;
+}
+
+span:hover {
+    color: red;
+}
